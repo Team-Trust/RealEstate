@@ -13,9 +13,9 @@ import javax.swing.border.*;
 public class main extends JFrame {
 
     static ArrayList<ListHouse> al = null;
-    // the list of house information
     
-    //* @author BUDDHINI
+    
+    @author BUDDHINI
     private static JTextField lotText;            
     private static JTextField firstText;          
     private static JTextField lastText;     
@@ -25,19 +25,19 @@ public class main extends JFrame {
     private static JLabel statusLabel;      
 
     
-    // Clears house information from screen
+
     private static void clearHouse() {
     }
-    // Define a button listener
+    
     static int j = 1;
 
     private static class ActionHandler implements ActionListener {
 
-        public void actionPerformed(ActionEvent event) // Listener for the button events
+        public void actionPerformed(ActionEvent event) 
         {
-            if (event.getActionCommand().equals("Reset")) { // Handles Reset event
+            if (event.getActionCommand().equals("Reset")) { 
                 clear();
-            } else if (event.getActionCommand().equals("Next")) { // Handles Next event
+            } else if (event.getActionCommand().equals("Next")) {
 
                 ListHouse ll = main.getOnehouse1(j);
                 if (ll == null) {
@@ -117,13 +117,13 @@ public class main extends JFrame {
         JLabel feetLabel;
         JLabel bedLabel;
 
-        JButton reset;             // Reset button
-        JButton next;	       // Next button
-        JButton add;               // Add button
-        JButton delete;            // Delete button
-        JButton clear;             // Clear button
-        JButton find;              // Find button
-        ActionHandler action;      // Declare listener
+        JButton reset;             
+        JButton next;	           
+        JButton add;
+        JButton delete;           
+        JButton clear;             
+        JButton find;              
+        ActionHandler action;      
 
         // Declare/instantiate/initialize display frame
         JFrame displayFrame = new JFrame();
